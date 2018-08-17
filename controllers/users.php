@@ -482,9 +482,7 @@ class Users extends ClearOS_Controller
             return;
         }
 
-        // Load the views
-        //---------------
-
+        
         $this->page->view_form('users/item', $data, lang('users_user_manager'));
     }
 }

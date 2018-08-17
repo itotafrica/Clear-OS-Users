@@ -33,6 +33,8 @@
 // Load dependencies
 ///////////////////////////////////////////////////////////////////////////////
 
+
+
 $this->lang->load('base');
 $this->lang->load('users');
 $this->lang->load('groups');
@@ -43,6 +45,8 @@ $this->lang->load('groups');
 
 $username = isset($user_info['core']['username'])? $user_info['core']['username'] : '';
 
+
+// Le buttons
 if ($form_type === 'edit') {
     $read_only = FALSE;
     $username_read_only = TRUE;
@@ -53,6 +57,8 @@ if ($form_type === 'edit') {
         anchor_cancel('/app/users/'),
         anchor_delete('/app/users/delete/' . $username)
     );
+    
+// Ajout d'un utilisateur
 } else if ($form_type === 'view') {
     $read_only = TRUE;
     $username_read_only = TRUE;
@@ -76,6 +82,7 @@ if ($form_type === 'edit') {
 // Form open
 ///////////////////////////////////////////////////////////////////////////////
 
+// $form_path == users/edit
 echo form_open($form_path, array('autocomplete' => 'off'));
 echo form_header(lang('users_user'));
 
@@ -88,7 +95,6 @@ echo form_header(lang('users_user'));
 // fields don't exist, fall back to the full name.
 //
 ///////////////////////////////////////////////////////////////////////////////
-
 echo fieldset_header(lang('users_name'));
 
 foreach ($info_map['core'] as $key_name => $details) {
@@ -252,11 +258,24 @@ if (! empty($windows_groups)) {
 
 }
 
+
 ///////////////////////////////////////////////////////////////////////////////
-// Form close
+// Form Open more information
+///////////////////////////////////////////////////////////////////////////////
+echo form_header("More information");
+include_once("listerner.php");
+
+
+echo form_footer();
+///////////////////////////////////////////////////////////////////////////////
+// Form Close more information
 ///////////////////////////////////////////////////////////////////////////////
 
 echo field_button_set($buttons);
 
+
+///////////////////////////////////////////////////////////////////////////////
+// Form close
+///////////////////////////////////////////////////////////////////////////////
 echo form_footer();
 echo form_close();
