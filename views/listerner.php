@@ -9,22 +9,23 @@
 
 <script>
 var info = {
-    "/bin/sh": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, officia, harum magni tempore deserunt sed omnis non officiis porro ex vitae sit vero expedita quo cumque architecto nisi! Ipsam, excepturi.",
+    //
+    "/bin/sh": "It will allow the user to write real complete scripts, with efficient control structures",
     
     //
-    "/bin/bash": "Comment ipsum dolor sit amet, consectetur adipisicing elit. Quam, officia, harum magni tempore deserunt sed omnis non officiis porro ex vitae sit vero expedita quo cumque architecto nisi! Ipsam, excepturi.",
+    "/bin/bash": "",
     
     //
-    "/sbin/nologin": "Salut ipsum dolor sit amet, consectetur adipisicing elit. Quam, officia, harum magni tempore deserunt sed omnis non officiis porro ex vitae sit vero expedita quo cumque architecto nisi! Ipsam, excepturi.",
+    "/sbin/nologin": "When /sbin/nologin is set as the shell, if user with that shell logs in, they'll get a polite message saying 'This account is currently not available.' This message can be changed",
     
     //
-    "/usr/bin/sh": "Autorisation ipsum dolor sit amet, consectetur adipisicing elit. Quam, officia, harum magni tempore deserunt sed omnis non officiis porro ex vitae sit vero expedita quo cumque architecto nisi! Ipsam, excepturi.",
+    "/usr/bin/sh": "",
     
     //
-    "/usr/bin/bash": "Permission ipsum dolor sit amet, consectetur adipisicing elit. Quam, officia, harum magni tempore deserunt sed omnis non officiis porro ex vitae sit vero expedita quo cumque architecto nisi! Ipsam, excepturi.",
+    "/usr/bin/bash": "",
     
     //
-    "/usr/sbin/nologin": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, officia, harum magni tempore deserunt sed omnis non officiis porro ex vitae sit vero expedita quo cumque architecto nisi! Ipsam, excepturi."
+    "/usr/sbin/nologin": ""
 }
     
 document.addEventListener('DOMContentLoaded', ()=> {        // Le document est deja pres
