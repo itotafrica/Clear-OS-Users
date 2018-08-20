@@ -13,7 +13,7 @@ var info = {
     "/bin/sh": "It will allow the user to write real complete scripts, with efficient control structures",
     
     //
-    "/bin/bash": "",
+    "/bin/bash": "Will be used in the remote session to execute commands. Same restrictions as for /bin/sh acces",
     
     //
     "/sbin/nologin": "When /sbin/nologin is set as the shell, if user with that shell logs in, they'll get a polite message saying 'This account is currently not available.' This message can be changed",
