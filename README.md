@@ -1,2 +1,2 @@
 # Clear-OS-users
-Clear-OS users est une application clear-os destiner a gérer l'ensemble d'utilisateur ainsi que leurs droit d’accès 
+ClearOS-users is intended to admins by helping them to manage ClearOS users and assigning to them rights and shell they will be allowed to use by choosing any of the options on the interface.
